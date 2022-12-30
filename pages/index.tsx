@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const [data, setData] = useState([{ userId: 0, title: '', url: '' }])
+  const [data, setData] = useState([{ id: 0, title: '', url: '' }])
 
   const getData = () => {
     axios
@@ -37,7 +37,7 @@ export default function Home() {
             <div className="col-sm-6">
               <div className="card">
                 <div className="card-body">
-                  <Link href={'/singlePage'}>
+                  <Link href={`/singlePage?id=${item.id}`}>
                     <div className='row'>
                       <div className='col-md-2'>
                         <img className="card-text" src={item.url} style={{ width: '100%' }} />
@@ -53,7 +53,7 @@ export default function Home() {
             <div className="col-sm-6">
               <div className="card">
                 <div className="card-body">
-                  <Link href={'/singlePage'}>
+                  <Link href={`/singlePage?id=${item.id}`}>
                     <div className='row'>
                       <div className='col-md-2'>
                         <img className="card-text" src={item.url} style={{ width: '100%' }} />
