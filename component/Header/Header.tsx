@@ -7,7 +7,7 @@ const Header = () => {
                 <div className='col-md-10'>
                     <p style={{fontWeight: 'bold', fontSize: '22px'}}>My Album</p>
                 </div>
-                <div className='col-md-2'>
+                <div className='col-md-2 drop'>
                     <select className="form-select" aria-label="Default select example">
                         <option selected> Select</option>
                         <option value="1">ASC</option>

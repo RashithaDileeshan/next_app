@@ -17,6 +17,11 @@
   background-color: #F2F2F2;
   }
 }
+@media (max-width:600px) {
+  .drop  {
+      display: none;
+  }
+}
 .homeTitle {
   padding-top: 30px;
 }
